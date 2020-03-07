@@ -1,0 +1,53 @@
+.h1,
+.h2 {
+  font-size: 2.167rem;
+  font-weight: 700;
+  line-height: 1;
+  @include atMedium {
+    font-size: 2.625rem;
+  }
+}
+
+.h3 {
+  font-size: 0.9167rem;
+  line-height: 1.27;
+  font-weight: 500;
+  letter-spacing: 1px;
+  @include atMedium {
+    font-size: 0.6875rem;
+  }
+}
+
+.p {
+  font-size: 1.167rem;
+  line-height: 1.35;
+  font-weight: 400;
+  @include atMedium {
+    font-size: 0.9375rem;
+    line-height: 1.333;
+  }
+
+  &--sm {
+    font-size: 0.9167rem;
+    line-height: 1.81;
+    @include atMedium {
+      font-size: 0.6875rem;
+    }
+  }
+
+  &--md {
+    font-size: 1rem;
+    @include atMedium {
+      font-size: 0.8125rem;
+    }
+  }
+
+  &--lg {
+    font-size: 1.4167rem;
+    line-height: 1.23;
+    @include atMedium {
+      font-size: 1.25rem;
+      line-height: 1.25;
+    }
+  }
+}

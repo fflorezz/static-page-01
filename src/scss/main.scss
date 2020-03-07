@@ -1,4 +1,8 @@
 @charset 'utf-8';
 @import "abstracts/_mixins";
 @import "abstracts/_variables";
-@import "base/_base-test";
+@import "base/_base";
+@import "base/_normalize";
+@import "base/_typography";
+@import "components/_btn";
+@import "layout/_header";

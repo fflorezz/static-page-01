@@ -1,0 +1,33 @@
+.header {
+  width: 100%;
+  padding: 0 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-gray-lgt;
+  .logo {
+    min-width: 50px;
+    background-color: rgb(150, 202, 233);
+    img {
+      width: 60px;
+    }
+  }
+  .nav {
+    width: 100%;
+    padding: 0 1.5rem;
+    background-color: rgb(179, 213, 233);
+
+    &__menu {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__item {
+      padding: 0 1.5rem;
+      cursor: pointer;
+    }
+  }
+  .contact-btn {
+    cursor: pointer;
+    background-color: rgb(150, 202, 233);
+  }
+}
