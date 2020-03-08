@@ -1,33 +1,86 @@
 .header {
-  width: 100%;
-  padding: 0 2.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: $color-gray-lgt;
-  .logo {
-    min-width: 50px;
-    background-color: rgb(150, 202, 233);
-    img {
-      width: 60px;
+  position: relative;
+  z-index: 9;
+  &__wrapper {
+    display: flex;
+  }
+  &__left-wrapper {
+    width: 100vw;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-black;
+    .logo {
+      img {
+        width: 40px;
+        cursor: pointer;
+      }
+    }
+    .hamburger-btn {
+      img {
+        width: 30px;
+        cursor: pointer;
+      }
     }
   }
-  .nav {
-    width: 100%;
-    padding: 0 1.5rem;
-    background-color: rgb(179, 213, 233);
-
-    &__menu {
-      display: flex;
-      justify-content: flex-end;
-    }
-    &__item {
-      padding: 0 1.5rem;
-      cursor: pointer;
+}
+.hero {
+  &__background {
+    height: calc(100vh - 64px);
+    background-image: $url-background;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    //Circle
+    &::before {
+      content: "";
+      height: 260px;
+      width: 260px;
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+      z-index: -1;
+      top: calc(50% - 90px);
+      left: calc(50% - 150px);
+      background: linear-gradient(
+        38deg,
+        rgba(252, 70, 107, 1) 0%,
+        rgba(63, 94, 251, 1) 100%
+      );
+      filter: blur(1px);
     }
   }
-  .contact-btn {
-    cursor: pointer;
-    background-color: rgb(150, 202, 233);
+  .main-title {
+    padding: 0 2em 0;
+    p {
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 3rem;
+    }
+  }
+  .sub-title {
+    padding: 0 2em;
+    p {
+      font-size: 3rem;
+      font-weight: 600;
+      line-height: 3rem;
+      text-align: end;
+    }
+  }
+  .slogan {
+    padding: 1em 1em;
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding-top: 2em;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.5rem;
+      color: $color-gray;
+      padding-top: 1.5em;
+    }
   }
 }
