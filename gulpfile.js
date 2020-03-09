@@ -5,7 +5,8 @@ const { src, dest, watch, series, parallel } = require("gulp");
 const sourcemaps = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const concat = require("gulp-concat");
-const uglify = require("gulp-uglify");
+let rename = require("gulp-rename");
+let uglify = require("gulp-uglify-es").default;
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
@@ -57,8 +58,8 @@ function watchTask() {
   browserSync.init({
     server: {
       baseDir: "./dist"
-    },
-    browser: ["C:Program Files (x86)/Google/Chrome Dev/Application/chrome.exe"]
+    }
+    // browser: ["C:Program Files (x86)/Google/Chrome Dev/Application/chrome.exe"]
   });
   watch(
     [files.scssPath, files.jsPath],
