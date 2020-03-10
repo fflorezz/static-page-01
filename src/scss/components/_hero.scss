@@ -1,0 +1,65 @@
+.hero {
+  &__background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: $url-background;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    //-----Circle-------
+    &::before {
+      content: "";
+      height: 250px;
+      width: 250px;
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+      z-index: -1;
+      opacity: 0.7;
+      top: calc(25%);
+      left: calc(15%);
+      background: $gradient-primary;
+      //filter: blur(0.8px);
+      animation: orbit 5s infinite linear;
+    }
+  }
+  .u-container {
+    padding: 2em 2em;
+    flex-direction: column;
+  }
+  &__main-title {
+    p {
+      width: 200px;
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 3rem;
+    }
+  }
+  &__sub-title {
+    text-align: end;
+    p {
+      padding-top: 1em;
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 3.12rem;
+    }
+    img {
+      width: 120px;
+      float: right;
+    }
+  }
+  &__slogan {
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      padding-top: 2em;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.5rem;
+      color: $color-gray;
+      padding-top: 1.2em;
+    }
+  }
+}

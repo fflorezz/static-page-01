@@ -87,7 +87,6 @@ video {
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  //font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -107,7 +106,7 @@ label {
   margin: 0;
   padding: 0;
   font-family: $font-main;
-  color: $color-black;
+  color: $color-font-black;
 }
 
 ol,

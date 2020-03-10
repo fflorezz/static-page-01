@@ -5,8 +5,8 @@ const { src, dest, watch, series, parallel } = require("gulp");
 const sourcemaps = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const concat = require("gulp-concat");
-let rename = require("gulp-rename");
-let uglify = require("gulp-uglify-es").default;
+const rename = require("gulp-rename");
+const uglify = require("gulp-uglify-es").default;
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
@@ -63,7 +63,7 @@ function watchTask() {
   });
   watch(
     [files.scssPath, files.jsPath],
-    { interval: 1000, usePolling: true }, //Makes docker work
+    { interval: 100, usePolling: false }, //Makes docker work
     series(parallel(scssTask, jsTask), cacheBustTask)
   );
   watch([files.scssPath, files.jsPath, files.htmlPath]).on(

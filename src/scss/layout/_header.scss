@@ -17,79 +17,11 @@
         cursor: pointer;
       }
     }
-    .hamburger-btn {
+    .nav-open-btn {
       img {
         width: 30px;
         cursor: pointer;
       }
-    }
-  }
-}
-.hero {
-  &__background {
-    height: calc(100vh - 64px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-image: $url-background;
-    //Circle
-    &::before {
-      content: "";
-      height: 260px;
-      width: 260px;
-      display: block;
-      border-radius: 50%;
-      position: absolute;
-      z-index: -1;
-      top: calc(50% - 90px);
-      left: calc(50% - 150px);
-      background: linear-gradient(
-        38deg,
-        rgba(252, 70, 107, 1) 0%,
-        rgba(63, 94, 251, 1) 100%
-      );
-      filter: blur(0.7px);
-      animation: orbit 5s infinite linear;
-    }
-  }
-  &__main-title {
-    padding: 0 2em 0;
-    p {
-      font-size: 2.5rem;
-      font-weight: 800;
-      line-height: 3rem;
-    }
-  }
-  &__sub-title {
-    padding: 0 2em;
-    p {
-      font-size: 2.5rem;
-      font-weight: 600;
-      line-height: 3rem;
-      text-align: end;
-    }
-    img {
-      width: 120px;
-      //margin-left: 60%;
-      float: right;
-    }
-  }
-  &__slogan {
-    padding: 0 1em;
-    h3 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      padding-top: 2em;
-      text-align: end;
-      max-width: 100%;
-      margin-right: 0.5em;
-    }
-    p {
-      font-size: 1rem;
-      font-weight: 500;
-      line-height: 1.5rem;
-      color: $color-gray;
-      padding-top: 1.2em;
     }
   }
 }

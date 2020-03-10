@@ -3,8 +3,11 @@
 @import "abstracts/_variables";
 @import "abstracts/_keyframes";
 @import "base/_base";
-//@import "base/_normalize";
+@import "base/_normalize";
 @import "base/_typography";
+@import "base/_utilities";
+@import "components/_hero";
 @import "components/_nav";
 @import "components/_btn";
+@import "components/_waves";
 @import "layout/_header";
