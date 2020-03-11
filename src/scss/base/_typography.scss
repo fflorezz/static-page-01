@@ -1,8 +1,29 @@
-// .h1,
-// .h2 {
-//   font-size: 2.167rem;
-//   font-weight: 700;
-//   line-height: 1;
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  letter-spacing: -0.1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.2rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: $color-gray;
+}
+
 //   @include atMedium {
 //     font-size: 2.625rem;
 //   }

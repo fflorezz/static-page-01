@@ -1,0 +1,19 @@
+.card {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  img {
+    width: 40%;
+    margin: 0 auto;
+    opacity: 0.1;
+  }
+  &__title {
+    margin-top: 1em;
+  }
+  &__text {
+    margin-top: 1em;
+  }
+}
