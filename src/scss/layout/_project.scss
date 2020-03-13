@@ -1,0 +1,11 @@
+.project {
+  &:first-child {
+    background-image: url("../assets/img/product-01-dots.jpg");
+  }
+  &:nth-child(2) {
+    background-image: url("../assets/img/product-02.jpg");
+  }
+  &:nth-child(3) {
+    background-image: url("../assets/img/product-03.jpg");
+  }
+}
