@@ -1,0 +1,18 @@
+.client {
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  &__thumbnail {
+    width: 70px;
+    border-radius: 50%;
+  }
+  &__info {
+    margin-left: 1em;
+    text-align: center;
+  }
+
+  &__position {
+    padding-top: 0.2em;
+    font-size: 1rem;
+  }
+}

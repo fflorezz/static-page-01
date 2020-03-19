@@ -1,0 +1,19 @@
+.testimonial {
+  margin-top: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3em 1.5em 2em;
+  background-color: white;
+  &__rating {
+    svg {
+      margin-top: 2em;
+      fill: #fbb943;
+      width: 50%;
+    }
+  }
+  &__content {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-bottom: solid 1px #eee;
+  }
+}
