@@ -18,10 +18,10 @@
 		"gulp-postcss": "^8.0.0",
 		"gulp-rename": "^2.0.0",
 		"gulp-replace": "^1.0.0",
-		"gulp-sass": "^4.0.2",
+		"gulp-sass": "^5.1.0",
 		"gulp-sourcemaps": "^2.6.5",
 		"gulp-uglify": "^3.0.2",
 		"gulp-uglify-es": "^2.0.0",
-		"node-sass": "^4.13.1"
+		"node-sass": "^8.0.0"
 	}
 }
